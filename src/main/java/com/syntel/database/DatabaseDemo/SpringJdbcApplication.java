@@ -13,7 +13,7 @@ import com.syntel.database.DatabaseDemo.entity.Person;
 import com.syntel.database.DatabaseDemo.jdbc.PersonJdbcDao;
 
 @SpringBootApplication
-public class DatabaseDemoApplication implements CommandLineRunner{
+public class SpringJdbcApplication implements CommandLineRunner{
 	
 	private Logger logger=LoggerFactory.getLogger(this.getClass());
 
@@ -21,7 +21,7 @@ public class DatabaseDemoApplication implements CommandLineRunner{
 	PersonJdbcDao dao;
 	
 	public static void main(String[] args) {
-		SpringApplication.run(DatabaseDemoApplication.class, args);
+		SpringApplication.run(SpringJdbcApplication.class, args);
 	}
 
 	@Override
